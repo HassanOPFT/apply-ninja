@@ -1,0 +1,113 @@
+2025-04-30 15:25:15,041 | __main__ | INFO | Running job apply agent...
+2025-04-30 15:25:17,424 | httpx | INFO | HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-04-30 15:25:20,329 | httpx | INFO | HTTP Request: POST https://api.openai.com/v1/traces/ingest "HTTP/1.1 204 No Content"
+2025-04-30 15:25:26,481 | httpx | INFO | HTTP Request: POST https://api.openai.com/v1/traces/ingest "HTTP/1.1 204 No Content"
+2025-04-30 15:25:27,127 | httpx | INFO | HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-04-30 15:25:29,670 | httpx | INFO | HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-04-30 15:25:29,672 | __main__ | INFO | RunResult:
+- Last agent: Agent(name="Job Apply Ninja", ...)
+- Final output (str):
+    I apologize for the inconvenience. It seems there's a technical issue with processing the LinkedIn Easy Apply form at the moment. Please try again later or check if the link is correct.
+- 6 new item(s)
+- 3 raw response(s)
+- 0 input guardrail result(s)
+- 0 output guardrail result(s)
+(See `RunResult` for more details)
+2025-04-30 15:25:30,157 | httpx | INFO | HTTP Request: POST https://api.openai.com/v1/traces/ingest "HTTP/1.1 204 No Content"
+2025-04-30 15:26:20,747 | __main__ | INFO | Running job apply agent...
+2025-04-30 15:26:22,554 | httpx | INFO | HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-04-30 15:26:25,271 | httpx | INFO | HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-04-30 15:26:25,273 | __main__ | INFO | RunResult:
+- Last agent: Agent(name="Job Apply Ninja", ...)
+- Final output (str):
+    It seems there was an error accessing the job application link. You might want to try again later or check the link to ensure it's correct. If you have any other tasks or need further assistance, feel free to let me know!
+- 3 new item(s)
+- 2 raw response(s)
+- 0 input guardrail result(s)
+- 0 output guardrail result(s)
+(See `RunResult` for more details)
+2025-04-30 15:26:26,714 | httpx | INFO | HTTP Request: POST https://api.openai.com/v1/traces/ingest "HTTP/1.1 204 No Content"
+2025-04-30 15:27:18,759 | __main__ | INFO | Running job apply agent...
+2025-04-30 15:27:20,862 | httpx | INFO | HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-04-30 15:27:23,238 | httpx | INFO | HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-04-30 15:27:23,242 | __main__ | INFO | RunResult:
+- Last agent: Agent(name="Job Apply Ninja", ...)
+- Final output (str):
+    It seems there was an issue with accessing the job application process. Please ensure you have provided the correct job link or try again later. Let me know if there's anything else I can help with!
+- 3 new item(s)
+- 2 raw response(s)
+- 0 input guardrail result(s)
+- 0 output guardrail result(s)
+(See `RunResult` for more details)
+2025-04-30 15:27:24,211 | httpx | INFO | HTTP Request: POST https://api.openai.com/v1/traces/ingest "HTTP/1.1 204 No Content"
+2025-04-30 15:27:32,495 | __main__ | INFO | Running job apply agent...
+2025-04-30 15:27:34,410 | httpx | INFO | HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-04-30 15:27:35,032 | tools.browser_form_tool | INFO | Starting LinkedIn login process...
+2025-04-30 15:27:38,214 | httpx | INFO | HTTP Request: POST https://api.openai.com/v1/traces/ingest "HTTP/1.1 204 No Content"
+2025-04-30 15:27:43,211 | tools.browser_form_tool | INFO | Entering credentials...
+2025-04-30 15:27:45,272 | tools.browser_form_tool | INFO | Submitting login form...
+2025-04-30 15:28:16,495 | tools.browser_form_tool | ERROR | Login process failed: Timeout 30000ms exceeded.
+=========================== logs ===========================
+"domcontentloaded" event fired
+"load" event fired
+============================================================
+2025-04-30 15:28:16,496 | tools.browser_form_tool | ERROR | Login failed, aborting job application process
+2025-04-30 15:28:18,485 | httpx | INFO | HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-04-30 15:28:18,489 | __main__ | INFO | RunResult:
+- Last agent: Agent(name="Job Apply Ninja", ...)
+- Final output (str):
+    It looks like I couldn't log in to LinkedIn. Please make sure that your credentials are correct and try again.
+- 3 new item(s)
+- 2 raw response(s)
+- 0 input guardrail result(s)
+- 0 output guardrail result(s)
+(See `RunResult` for more details)
+2025-04-30 15:28:19,168 | httpx | INFO | HTTP Request: POST https://api.openai.com/v1/traces/ingest "HTTP/1.1 204 No Content"
+2025-04-30 15:28:19,800 | httpx | INFO | HTTP Request: POST https://api.openai.com/v1/traces/ingest "HTTP/1.1 204 No Content"
+2025-04-30 15:30:53,483 | __main__ | INFO | Running job apply agent...
+2025-04-30 15:30:55,375 | httpx | INFO | HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-04-30 15:30:56,144 | tools.browser_form_tool | INFO | Starting LinkedIn login process...
+2025-04-30 15:30:59,039 | httpx | INFO | HTTP Request: POST https://api.openai.com/v1/traces/ingest "HTTP/1.1 204 No Content"
+2025-04-30 15:31:03,634 | tools.browser_form_tool | INFO | Entering credentials...
+2025-04-30 15:31:05,693 | tools.browser_form_tool | INFO | Submitting login form...
+2025-04-30 15:31:37,096 | tools.browser_form_tool | ERROR | Login process failed: Timeout 30000ms exceeded.
+=========================== logs ===========================
+"domcontentloaded" event fired
+"load" event fired
+============================================================
+2025-04-30 15:31:37,167 | tools.browser_form_tool | ERROR | Login failed, aborting job application process
+2025-04-30 15:31:39,001 | httpx | INFO | HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-04-30 15:31:39,003 | __main__ | INFO | RunResult:
+- Last agent: Agent(name="Job Apply Ninja", ...)
+- Final output (str):
+    I encountered an issue logging into LinkedIn. Please make sure you're logged in and try again.
+- 3 new item(s)
+- 2 raw response(s)
+- 0 input guardrail result(s)
+- 0 output guardrail result(s)
+(See `RunResult` for more details)
+2025-04-30 15:31:39,975 | httpx | INFO | HTTP Request: POST https://api.openai.com/v1/traces/ingest "HTTP/1.1 204 No Content"
+2025-04-30 15:32:57,001 | __main__ | INFO | Running job apply agent...
+2025-04-30 15:32:59,944 | httpx | INFO | HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-04-30 15:33:00,597 | tools.browser_form_tool | INFO | Starting LinkedIn login process...
+2025-04-30 15:33:02,719 | httpx | INFO | HTTP Request: POST https://api.openai.com/v1/traces/ingest "HTTP/1.1 204 No Content"
+2025-04-30 15:33:08,514 | tools.browser_form_tool | INFO | Entering credentials...
+2025-04-30 15:33:10,574 | tools.browser_form_tool | INFO | Submitting login form...
+2025-04-30 15:33:42,074 | tools.browser_form_tool | ERROR | Login process failed: Timeout 30000ms exceeded.
+=========================== logs ===========================
+"domcontentloaded" event fired
+"load" event fired
+============================================================
+2025-04-30 15:33:42,148 | tools.browser_form_tool | ERROR | Login failed, aborting job application process
+2025-04-30 15:33:43,662 | httpx | INFO | HTTP Request: POST https://api.openai.com/v1/traces/ingest "HTTP/1.1 204 No Content"
+2025-04-30 15:33:44,579 | httpx | INFO | HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-04-30 15:33:44,582 | __main__ | INFO | RunResult:
+- Last agent: Agent(name="Job Apply Ninja", ...)
+- Final output (str):
+    It seems there was an issue logging in to LinkedIn. Please ensure that your credentials are entered correctly and try again. If you have any more questions or need further assistance, feel free to ask!
+- 3 new item(s)
+- 2 raw response(s)
+- 0 input guardrail result(s)
+- 0 output guardrail result(s)
+(See `RunResult` for more details)
+2025-04-30 15:33:45,023 | httpx | INFO | HTTP Request: POST https://api.openai.com/v1/traces/ingest "HTTP/1.1 204 No Content"
