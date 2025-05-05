@@ -11,3 +11,5 @@
 
 # Playwright
 playwright/.cache/
+
+cookies/

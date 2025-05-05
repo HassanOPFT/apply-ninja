@@ -1,0 +1,337 @@
+2025-05-01 12:29:36,110 | __main__ | INFO | Running job apply agent...
+2025-05-01 12:29:38,245 | httpx | INFO | HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-05-01 12:29:41,681 | httpx | INFO | HTTP Request: POST https://api.openai.com/v1/traces/ingest "HTTP/1.1 204 No Content"
+2025-05-01 12:29:47,682 | tools.browser_form_tool | INFO | Starting LinkedIn login process...
+2025-05-01 12:29:55,272 | tools.browser_form_tool | INFO | Entering credentials...
+2025-05-01 12:29:57,341 | tools.browser_form_tool | INFO | Submitting login form...
+2025-05-01 12:30:28,507 | tools.browser_form_tool | ERROR | Login process failed: Timeout 30000ms exceeded.
+=========================== logs ===========================
+"domcontentloaded" event fired
+"load" event fired
+============================================================
+2025-05-01 12:30:28,577 | tools.browser_form_tool | ERROR | Login failed, aborting job application process
+2025-05-01 12:30:30,633 | httpx | INFO | HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-05-01 12:30:30,637 | __main__ | INFO | RunResult:
+- Last agent: Agent(name="Job Apply Ninja", ...)
+- Final output (str):
+    I was unable to log in to LinkedIn to fill out the form. Please ensure that you are logged in and have access to LinkedIn on your browser.
+- 3 new item(s)
+- 2 raw response(s)
+- 0 input guardrail result(s)
+- 0 output guardrail result(s)
+(See `RunResult` for more details)
+2025-05-01 12:30:31,848 | httpx | INFO | HTTP Request: POST https://api.openai.com/v1/traces/ingest "HTTP/1.1 204 No Content"
+2025-05-01 12:34:03,091 | __main__ | INFO | Running job apply agent...
+2025-05-01 12:34:04,621 | httpx | INFO | HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-05-01 12:34:05,298 | tools.browser_form_tool | INFO | Starting LinkedIn login process...
+2025-05-01 12:34:08,828 | httpx | INFO | HTTP Request: POST https://api.openai.com/v1/traces/ingest "HTTP/1.1 204 No Content"
+2025-05-01 12:34:12,652 | tools.browser_form_tool | INFO | Entering credentials...
+2025-05-01 12:34:14,714 | tools.browser_form_tool | INFO | Submitting login form...
+2025-05-01 12:34:46,786 | tools.browser_form_tool | ERROR | Login process failed: Timeout 30000ms exceeded.
+=========================== logs ===========================
+"domcontentloaded" event fired
+"load" event fired
+============================================================
+2025-05-01 12:34:46,857 | tools.browser_form_tool | ERROR | Login failed, aborting job application process
+2025-05-01 12:34:48,637 | httpx | INFO | HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-05-01 12:34:48,641 | __main__ | INFO | RunResult:
+- Last agent: Agent(name="Job Apply Ninja", ...)
+- Final output (str):
+    I'm unable to access the LinkedIn job post directly. You might want to try logging in manually and navigating to the job post. If you need further assistance, feel free to ask!
+- 3 new item(s)
+- 2 raw response(s)
+- 0 input guardrail result(s)
+- 0 output guardrail result(s)
+(See `RunResult` for more details)
+2025-05-01 12:34:49,568 | httpx | INFO | HTTP Request: POST https://api.openai.com/v1/traces/ingest "HTTP/1.1 204 No Content"
+2025-05-01 12:36:24,136 | __main__ | INFO | Running job apply agent...
+2025-05-01 12:36:25,765 | httpx | INFO | HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-05-01 12:36:26,408 | tools.browser_form_tool | INFO | Starting LinkedIn login process...
+2025-05-01 12:36:29,786 | httpx | INFO | HTTP Request: POST https://api.openai.com/v1/traces/ingest "HTTP/1.1 204 No Content"
+2025-05-01 12:36:58,988 | tools.browser_form_tool | ERROR | Login process failed: Timeout 30000ms exceeded.
+2025-05-01 12:36:58,995 | tools.browser_form_tool | ERROR | Login failed, aborting job application process
+2025-05-01 12:37:00,740 | httpx | INFO | HTTP Request: POST https://api.openai.com/v1/traces/ingest "HTTP/1.1 204 No Content"
+2025-05-01 12:37:00,921 | httpx | INFO | HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-05-01 12:37:00,926 | __main__ | INFO | RunResult:
+- Last agent: Agent(name="Job Apply Ninja", ...)
+- Final output (str):
+    It seems I couldn't access LinkedIn to apply for the job. Please ensure you're logged into LinkedIn or provide any necessary login credentials if applicable. Let me know if there's anything else I can help with!
+- 3 new item(s)
+- 2 raw response(s)
+- 0 input guardrail result(s)
+- 0 output guardrail result(s)
+(See `RunResult` for more details)
+2025-05-01 12:37:01,899 | httpx | INFO | HTTP Request: POST https://api.openai.com/v1/traces/ingest "HTTP/1.1 204 No Content"
+2025-05-01 12:48:20,698 | __main__ | INFO | Running job apply agent...
+2025-05-01 12:48:22,343 | httpx | INFO | HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-05-01 12:48:23,037 | utils.cookie_manager | INFO | No saved cookies found
+2025-05-01 12:48:23,037 | tools.browser_form_tool | INFO | Starting LinkedIn login process...
+2025-05-01 12:48:26,821 | httpx | INFO | HTTP Request: POST https://api.openai.com/v1/traces/ingest "HTTP/1.1 204 No Content"
+2025-05-01 12:48:30,360 | tools.browser_form_tool | INFO | Entering credentials...
+2025-05-01 12:48:32,401 | tools.browser_form_tool | INFO | Submitting login form...
+2025-05-01 12:49:03,872 | tools.browser_form_tool | ERROR | Login process failed: Timeout 30000ms exceeded.
+=========================== logs ===========================
+"domcontentloaded" event fired
+"load" event fired
+============================================================
+2025-05-01 12:49:03,945 | tools.browser_form_tool | ERROR | Login failed, aborting job application process
+2025-05-01 12:49:05,554 | httpx | INFO | HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-05-01 12:49:05,556 | __main__ | INFO | RunResult:
+- Last agent: Agent(name="Job Apply Ninja", ...)
+- Final output (str):
+    It seems there was a problem logging into LinkedIn. Please ensure that your credentials are correct and try again.
+- 3 new item(s)
+- 2 raw response(s)
+- 0 input guardrail result(s)
+- 0 output guardrail result(s)
+(See `RunResult` for more details)
+2025-05-01 12:49:06,913 | httpx | INFO | HTTP Request: POST https://api.openai.com/v1/traces/ingest "HTTP/1.1 204 No Content"
+2025-05-01 13:01:50,489 | __main__ | INFO | Running job apply agent...
+2025-05-01 13:01:51,927 | httpx | INFO | HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-05-01 13:01:52,467 | utils.browser_manager | INFO | Browser initialized successfully
+2025-05-01 13:01:52,607 | utils.browser_manager | INFO | New page created
+2025-05-01 13:01:52,608 | utils.cookie_manager | INFO | No saved cookies found
+2025-05-01 13:01:53,531 | httpx | INFO | HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-05-01 13:01:53,533 | tools.linkedin_tools | INFO | Starting LinkedIn login process...
+2025-05-01 13:01:56,277 | httpx | INFO | HTTP Request: POST https://api.openai.com/v1/traces/ingest "HTTP/1.1 204 No Content"
+2025-05-01 13:01:59,001 | utils.browser_manager | INFO | Navigated to https://www.linkedin.com/login
+2025-05-01 13:02:01,015 | tools.linkedin_tools | INFO | Entering credentials...
+2025-05-01 13:02:03,076 | tools.linkedin_tools | INFO | Submitting login form...
+2025-05-01 13:02:34,219 | tools.linkedin_tools | ERROR | Login process failed: Timeout 30000ms exceeded.
+=========================== logs ===========================
+"domcontentloaded" event fired
+"load" event fired
+============================================================
+2025-05-01 13:02:39,237 | openai._base_client | INFO | Retrying request to /responses in 0.431879 seconds
+2025-05-01 13:02:44,690 | openai._base_client | INFO | Retrying request to /responses in 0.968851 seconds
+2025-05-01 13:02:46,405 | openai.agents | WARNING | [non-fatal] Tracing: request failed: timed out
+2025-05-01 13:02:47,024 | httpx | INFO | HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-05-01 13:02:47,027 | __main__ | INFO | RunResult:
+- Last agent: Agent(name="Job Apply Ninja", ...)
+- Final output (str):
+    I wasn't able to log in to LinkedIn. Please check your login credentials and try again.
+- 5 new item(s)
+- 3 raw response(s)
+- 0 input guardrail result(s)
+- 0 output guardrail result(s)
+(See `RunResult` for more details)
+2025-05-01 13:02:53,858 | httpx | INFO | HTTP Request: POST https://api.openai.com/v1/traces/ingest "HTTP/1.1 204 No Content"
+2025-05-01 13:02:54,592 | httpx | INFO | HTTP Request: POST https://api.openai.com/v1/traces/ingest "HTTP/1.1 204 No Content"
+2025-05-01 13:05:10,812 | __main__ | INFO | Running job apply agent...
+2025-05-01 13:05:12,400 | httpx | INFO | HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-05-01 13:05:12,891 | utils.browser_manager | INFO | Browser initialized successfully
+2025-05-01 13:05:13,022 | utils.browser_manager | INFO | New page created
+2025-05-01 13:05:13,022 | utils.cookie_manager | INFO | No saved cookies found
+2025-05-01 13:05:13,743 | httpx | INFO | HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-05-01 13:05:13,746 | tools.linkedin_tools | INFO | Starting LinkedIn login process...
+2025-05-01 13:05:16,765 | httpx | INFO | HTTP Request: POST https://api.openai.com/v1/traces/ingest "HTTP/1.1 204 No Content"
+2025-05-01 13:05:46,056 | utils.browser_manager | ERROR | Failed to navigate to https://www.linkedin.com/login: Timeout 30000ms exceeded.
+2025-05-01 13:05:48,061 | tools.linkedin_tools | INFO | Entering credentials...
+2025-05-01 13:05:50,105 | tools.linkedin_tools | INFO | Submitting login form...
+2025-05-01 13:06:51,332 | tools.linkedin_tools | WARNING | Network idle wait timed out: Timeout 60000ms exceeded.
+=========================== logs ===========================
+"domcontentloaded" event fired
+"load" event fired
+============================================================
+2025-05-01 13:06:51,350 | tools.linkedin_tools | INFO | Successfully logged in to LinkedIn
+2025-05-01 13:06:51,354 | utils.cookie_manager | INFO | Successfully saved LinkedIn cookies
+2025-05-01 13:06:52,807 | httpx | INFO | HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-05-01 13:06:52,961 | httpx | INFO | HTTP Request: POST https://api.openai.com/v1/traces/ingest "HTTP/1.1 204 No Content"
+2025-05-01 13:06:53,801 | httpx | INFO | HTTP Request: POST https://api.openai.com/v1/traces/ingest "HTTP/1.1 204 No Content"
+2025-05-01 13:07:26,684 | utils.browser_manager | ERROR | Failed to navigate to https://sa.linkedin.com/jobs/view/react-front-end-developer-at-ejadah-management-consultancy-4216328815?utm_campaign=google_jobs_apply&utm_source=google_jobs_apply&utm_medium=organic: Timeout 30000ms exceeded.
+2025-05-01 13:07:27,965 | httpx | INFO | HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-05-01 13:07:27,968 | __main__ | INFO | RunResult:
+- Last agent: Agent(name="Job Apply Ninja", ...)
+- Final output (str):
+    I couldn't navigate to the job posting. Please make sure the URL is correct and accessible. If there's anything specific you'd like to check or try, let me know!
+- 7 new item(s)
+- 4 raw response(s)
+- 0 input guardrail result(s)
+- 0 output guardrail result(s)
+(See `RunResult` for more details)
+2025-05-01 13:07:29,092 | httpx | INFO | HTTP Request: POST https://api.openai.com/v1/traces/ingest "HTTP/1.1 204 No Content"
+2025-05-01 13:18:03,191 | __main__ | INFO | Running job apply agent...
+2025-05-01 13:18:04,718 | httpx | INFO | HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-05-01 13:18:05,220 | utils.browser_manager | INFO | Browser initialized successfully
+2025-05-01 13:18:05,347 | utils.browser_manager | INFO | New page created
+2025-05-01 13:18:05,348 | utils.cookie_manager | INFO | Successfully loaded LinkedIn cookies
+2025-05-01 13:18:05,348 | tools.linkedin_tools | INFO | Found existing cookies, attempting to use them...
+2025-05-01 13:18:08,816 | httpx | INFO | HTTP Request: POST https://api.openai.com/v1/traces/ingest "HTTP/1.1 204 No Content"
+2025-05-01 13:18:42,264 | utils.browser_manager | ERROR | Failed to navigate to https://www.linkedin.com/feed: Timeout 30000ms exceeded.
+2025-05-01 13:18:42,285 | tools.linkedin_tools | INFO | Successfully logged in using saved cookies
+2025-05-01 13:18:43,934 | httpx | INFO | HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-05-01 13:18:45,308 | httpx | INFO | HTTP Request: POST https://api.openai.com/v1/traces/ingest "HTTP/1.1 204 No Content"
+2025-05-01 13:18:45,970 | httpx | INFO | HTTP Request: POST https://api.openai.com/v1/traces/ingest "HTTP/1.1 204 No Content"
+2025-05-01 13:19:16,862 | utils.browser_manager | ERROR | Failed to navigate to https://sa.linkedin.com/jobs/view/react-front-end-developer-at-ejadah-management-consultancy-4216328815?utm_campaign=google_jobs_apply&utm_source=google_jobs_apply&utm_medium=organic: Timeout 30000ms exceeded.
+2025-05-01 13:19:18,198 | httpx | INFO | HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-05-01 13:19:18,201 | __main__ | INFO | RunResult:
+- Last agent: Agent(name="Job Apply Ninja", ...)
+- Final output (str):
+    I couldn't navigate to the job posting. There might be an issue with the URL or access permissions. Could you please check and provide the correct URL or any additional information?
+- 5 new item(s)
+- 3 raw response(s)
+- 0 input guardrail result(s)
+- 0 output guardrail result(s)
+(See `RunResult` for more details)
+2025-05-01 13:19:19,097 | httpx | INFO | HTTP Request: POST https://api.openai.com/v1/traces/ingest "HTTP/1.1 204 No Content"
+2025-05-01 13:43:26,777 | __main__ | INFO | Running job apply agent...
+2025-05-01 13:43:28,789 | httpx | INFO | HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-05-01 13:43:29,324 | utils.browser_manager | INFO | Browser initialized successfully
+2025-05-01 13:43:29,465 | utils.browser_manager | INFO | New page created
+2025-05-01 13:43:29,465 | utils.cookie_manager | INFO | Successfully loaded LinkedIn cookies
+2025-05-01 13:43:29,466 | tools.linkedin_tools | INFO | Found existing cookies, attempting to use them...
+2025-05-01 13:43:32,965 | httpx | INFO | HTTP Request: POST https://api.openai.com/v1/traces/ingest "HTTP/1.1 204 No Content"
+2025-05-01 13:43:59,484 | utils.browser_manager | WARNING | Operation timed out, retrying with increased timeout (attempt 1)
+2025-05-01 13:44:01,957 | utils.browser_manager | INFO | Navigated to https://www.linkedin.com/feed with load state
+2025-05-01 13:44:02,054 | tools.linkedin_tools | INFO | Successfully logged in using saved cookies
+2025-05-01 13:44:03,971 | httpx | INFO | HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-05-01 13:44:03,999 | httpx | INFO | HTTP Request: POST https://api.openai.com/v1/traces/ingest "HTTP/1.1 204 No Content"
+2025-05-01 13:44:04,597 | httpx | INFO | HTTP Request: POST https://api.openai.com/v1/traces/ingest "HTTP/1.1 204 No Content"
+2025-05-01 13:44:07,601 | utils.browser_manager | INFO | Navigated to https://sa.linkedin.com/jobs/view/react-front-end-developer-at-ejadah-management-consultancy-4216328815?utm_campaign=google_jobs_apply&utm_source=google_jobs_apply&utm_medium=organic with load state
+2025-05-01 13:44:10,533 | httpx | INFO | HTTP Request: POST https://api.openai.com/v1/traces/ingest "HTTP/1.1 204 No Content"
+2025-05-01 13:44:34,023 | tools.linkedin_tools | WARNING | Easy Apply button not found
+2025-05-01 13:44:35,431 | httpx | INFO | HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-05-01 13:44:35,435 | __main__ | INFO | RunResult:
+- Last agent: Agent(name="Job Apply Ninja", ...)
+- Final output (str):
+    It seems like the "Easy Apply" option isn't available for this job. You may need to apply through the company's application process on their website. If there's anything else you need, feel free to ask!
+- 7 new item(s)
+- 3 raw response(s)
+- 0 input guardrail result(s)
+- 0 output guardrail result(s)
+(See `RunResult` for more details)
+2025-05-01 13:44:36,438 | httpx | INFO | HTTP Request: POST https://api.openai.com/v1/traces/ingest "HTTP/1.1 204 No Content"
+2025-05-01 13:44:36,472 | asyncio | ERROR | Future exception was never retrieved
+future: <Future finished exception=TimeoutError('Timeout 30000ms exceeded.\nCall log:\n  - navigating to "https://www.linkedin.com/feed", waiting until "load"\n')>
+playwright._impl._errors.TimeoutError: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://www.linkedin.com/feed", waiting until "load"
+
+2025-05-01 13:49:23,527 | __main__ | INFO | Running job apply agent...
+2025-05-01 13:49:24,837 | httpx | INFO | HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-05-01 13:49:25,353 | utils.browser_manager | INFO | Browser initialized successfully
+2025-05-01 13:49:25,485 | utils.browser_manager | INFO | New page created
+2025-05-01 13:49:25,485 | utils.cookie_manager | INFO | Successfully loaded LinkedIn cookies
+2025-05-01 13:49:25,486 | tools.linkedin_tools | INFO | Found existing cookies, attempting to use them...
+2025-05-01 13:49:29,417 | httpx | INFO | HTTP Request: POST https://api.openai.com/v1/traces/ingest "HTTP/1.1 204 No Content"
+2025-05-01 13:49:32,542 | utils.browser_manager | INFO | Navigated to https://www.linkedin.com/feed with load state
+2025-05-01 13:49:32,783 | tools.linkedin_tools | INFO | Successfully logged in using saved cookies
+2025-05-01 13:49:34,296 | httpx | INFO | HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-05-01 13:49:35,457 | httpx | INFO | HTTP Request: POST https://api.openai.com/v1/traces/ingest "HTTP/1.1 204 No Content"
+2025-05-01 13:49:37,835 | utils.browser_manager | INFO | Navigated to https://sa.linkedin.com/jobs/view/react-front-end-developer-at-ejadah-management-consultancy-4216328815?utm_campaign=google_jobs_apply&utm_source=google_jobs_apply&utm_medium=organic with load state
+2025-05-01 13:49:38,795 | httpx | INFO | HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-05-01 13:49:41,504 | httpx | INFO | HTTP Request: POST https://api.openai.com/v1/traces/ingest "HTTP/1.1 204 No Content"
+2025-05-01 13:50:08,812 | tools.linkedin_tools | WARNING | Easy Apply button not found
+2025-05-01 13:50:10,313 | httpx | INFO | HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-05-01 13:50:10,316 | __main__ | INFO | RunResult:
+- Last agent: Agent(name="Job Apply Ninja", ...)
+- Final output (str):
+    It seems that the "Easy Apply" option is not available for this job. Is there anything else you'd like to do?
+- 7 new item(s)
+- 4 raw response(s)
+- 0 input guardrail result(s)
+- 0 output guardrail result(s)
+(See `RunResult` for more details)
+2025-05-01 13:50:11,396 | httpx | INFO | HTTP Request: POST https://api.openai.com/v1/traces/ingest "HTTP/1.1 204 No Content"
+2025-05-01 14:46:03,700 | __main__ | INFO | Running job apply agent...
+2025-05-01 14:46:04,885 | httpx | INFO | HTTP Request: POST https://api.openai.com/v1/traces/ingest "HTTP/1.1 204 No Content"
+2025-05-01 14:46:31,534 | __main__ | INFO | Running job apply agent...
+2025-05-01 14:46:33,368 | httpx | INFO | HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-05-01 14:46:37,138 | httpx | INFO | HTTP Request: POST https://api.openai.com/v1/traces/ingest "HTTP/1.1 204 No Content"
+2025-05-01 14:46:39,007 | utils.browser_manager | INFO | Browser initialized successfully
+2025-05-01 14:46:39,335 | utils.browser_manager | INFO | New page created
+2025-05-01 14:46:39,344 | utils.cookie_manager | INFO | Successfully loaded LinkedIn cookies
+2025-05-01 14:46:39,345 | tools.linkedin_tools | INFO | Found existing cookies, attempting to use them...
+2025-05-01 14:46:43,458 | utils.browser_manager | INFO | Navigated to https://www.linkedin.com/feed with load state
+2025-05-01 14:46:43,507 | tools.linkedin_tools | INFO | Successfully logged in using saved cookies
+2025-05-01 14:46:45,107 | httpx | INFO | HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-05-01 14:46:45,109 | tools.linkedin_tools | INFO | Looking for Easy Apply button...
+2025-05-01 14:46:48,099 | utils.browser_manager | INFO | Navigated to https://sa.linkedin.com/jobs/view/react-front-end-developer-at-ejadah-management-consultancy-4216328815?utm_campaign=google_jobs_apply&utm_source=google_jobs_apply&utm_medium=organic with load state
+2025-05-01 14:46:48,273 | httpx | INFO | HTTP Request: POST https://api.openai.com/v1/traces/ingest "HTTP/1.1 204 No Content"
+2025-05-01 14:46:48,655 | httpx | INFO | HTTP Request: POST https://api.openai.com/v1/traces/ingest "HTTP/1.1 204 No Content"
+2025-05-01 14:46:50,152 | tools.linkedin_tools | INFO | Trying fallback selector: button.jobs-apply-button.artdeco-button--primary
+2025-05-01 14:46:52,173 | tools.linkedin_tools | INFO | Trying fallback selector: div.jobs-apply-button--top-card button
+2025-05-01 14:46:52,180 | tools.linkedin_tools | INFO | Easy Apply button found with fallback selector: div.jobs-apply-button--top-card button
+2025-05-01 14:46:53,626 | httpx | INFO | HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-05-01 14:46:53,644 | __main__ | INFO | RunResult:
+- Last agent: Agent(name="Job Apply Ninja", ...)
+- Final output (str):
+    Please provide your phone number to complete the application.
+- 7 new item(s)
+- 3 raw response(s)
+- 0 input guardrail result(s)
+- 0 output guardrail result(s)
+(See `RunResult` for more details)
+2025-05-01 14:46:54,497 | httpx | INFO | HTTP Request: POST https://api.openai.com/v1/traces/ingest "HTTP/1.1 204 No Content"
+2025-05-01 14:51:42,161 | __main__ | INFO | Running job apply agent...
+2025-05-01 14:51:44,699 | httpx | INFO | HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-05-01 14:51:45,226 | utils.browser_manager | INFO | Browser initialized successfully
+2025-05-01 14:51:45,373 | utils.browser_manager | INFO | New page created
+2025-05-01 14:51:45,373 | utils.cookie_manager | INFO | Successfully loaded LinkedIn cookies
+2025-05-01 14:51:45,373 | tools.linkedin_tools | INFO | Found existing cookies, attempting to use them...
+2025-05-01 14:51:48,161 | httpx | INFO | HTTP Request: POST https://api.openai.com/v1/traces/ingest "HTTP/1.1 204 No Content"
+2025-05-01 14:51:49,812 | utils.browser_manager | INFO | Navigated to https://www.linkedin.com/feed with load state
+2025-05-01 14:51:49,867 | tools.linkedin_tools | INFO | Successfully logged in using saved cookies
+2025-05-01 14:51:51,390 | httpx | INFO | HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-05-01 14:51:51,396 | tools.linkedin_tools | INFO | Looking for Easy Apply button...
+2025-05-01 14:51:53,410 | utils.browser_manager | ERROR | Failed to wait for selector div.jobs-apply-button--top-card button: Page.wait_for_selector: Timeout 2000ms exceeded.
+Call log:
+  - waiting for locator("div.jobs-apply-button--top-card button") to be visible
+    - waiting for" https://www.linkedin.com/jobs/view/react-front-end-developer-at-ejadah-management-consultancy-4216328815?utm_campaign=google_jobs_apply&utm_source=google_jobs_apply&utm_medium=organic&originalSubdoma…" navigation to finish...
+    - navigated to "https://www.linkedin.com/jobs/view/react-front-end-developer-at-ejadah-management-consultancy-4216328815?utm_campaign=google_jobs_apply&utm_source=google_jobs_apply&utm_medium=organic&originalSubdoma…"
+
+2025-05-01 14:51:53,410 | tools.linkedin_tools | WARNING | Easy Apply button not found
+2025-05-01 14:51:54,286 | httpx | INFO | HTTP Request: POST https://api.openai.com/v1/traces/ingest "HTTP/1.1 204 No Content"
+2025-05-01 14:51:54,816 | utils.browser_manager | INFO | Navigated to https://sa.linkedin.com/jobs/view/react-front-end-developer-at-ejadah-management-consultancy-4216328815?utm_campaign=google_jobs_apply&utm_source=google_jobs_apply&utm_medium=organic with load state
+2025-05-01 14:51:55,072 | httpx | INFO | HTTP Request: POST https://api.openai.com/v1/traces/ingest "HTTP/1.1 204 No Content"
+2025-05-01 14:51:55,698 | httpx | INFO | HTTP Request: POST https://api.openai.com/v1/traces/ingest "HTTP/1.1 204 No Content"
+2025-05-01 14:51:56,524 | httpx | INFO | HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-05-01 14:51:56,528 | __main__ | INFO | RunResult:
+- Last agent: Agent(name="Job Apply Ninja", ...)
+- Final output (str):
+    It looks like the "Easy Apply" button is not available for this job posting. You might need to apply using the company's application process on their website. Let me know if there's anything else I can assist you with!
+- 7 new item(s)
+- 3 raw response(s)
+- 0 input guardrail result(s)
+- 0 output guardrail result(s)
+(See `RunResult` for more details)
+2025-05-01 14:51:57,184 | httpx | INFO | HTTP Request: POST https://api.openai.com/v1/traces/ingest "HTTP/1.1 204 No Content"
+2025-05-01 14:53:17,424 | __main__ | INFO | Running job apply agent...
+2025-05-01 14:53:19,116 | httpx | INFO | HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-05-01 14:53:19,613 | utils.browser_manager | INFO | Browser initialized successfully
+2025-05-01 14:53:19,753 | utils.browser_manager | INFO | New page created
+2025-05-01 14:53:19,754 | utils.cookie_manager | INFO | Successfully loaded LinkedIn cookies
+2025-05-01 14:53:19,754 | tools.linkedin_tools | INFO | Found existing cookies, attempting to use them...
+2025-05-01 14:53:23,218 | httpx | INFO | HTTP Request: POST https://api.openai.com/v1/traces/ingest "HTTP/1.1 204 No Content"
+2025-05-01 14:53:26,904 | utils.browser_manager | INFO | Navigated to https://www.linkedin.com/feed with load state
+2025-05-01 14:53:27,811 | tools.linkedin_tools | INFO | Successfully logged in using saved cookies
+2025-05-01 14:53:29,111 | httpx | INFO | HTTP Request: POST https://api.openai.com/v1/traces/ingest "HTTP/1.1 204 No Content"
+2025-05-01 14:53:29,320 | httpx | INFO | HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-05-01 14:53:29,322 | tools.linkedin_tools | INFO | Looking for Easy Apply button...
+2025-05-01 14:53:32,033 | utils.browser_manager | INFO | Navigated to https://sa.linkedin.com/jobs/view/react-front-end-developer-at-ejadah-management-consultancy-4216328815?utm_campaign=google_jobs_apply&utm_source=google_jobs_apply&utm_medium=organic with load state
+2025-05-01 14:53:34,340 | tools.linkedin_tools | INFO | Trying fallback selector: button.jobs-apply-button.artdeco-button--primary
+2025-05-01 14:53:35,066 | httpx | INFO | HTTP Request: POST https://api.openai.com/v1/traces/ingest "HTTP/1.1 204 No Content"
+2025-05-01 14:53:36,347 | tools.linkedin_tools | INFO | Trying fallback selector: div.jobs-apply-button--top-card button
+2025-05-01 14:53:36,355 | tools.linkedin_tools | INFO | Easy Apply button found with fallback selector: div.jobs-apply-button--top-card button
+2025-05-01 14:53:37,637 | httpx | INFO | HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-05-01 14:53:41,053 | httpx | INFO | HTTP Request: POST https://api.openai.com/v1/traces/ingest "HTTP/1.1 204 No Content"
+2025-05-01 14:54:07,664 | utils.browser_manager | ERROR | Failed to wait for selector input[aria-label="Phone number"]: Page.wait_for_selector: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator("input[aria-label=\"Phone number\"]") to be visible
+
+2025-05-01 14:54:07,665 | tools.linkedin_tools | WARNING | Phone number field not found
+2025-05-01 14:54:09,050 | httpx | INFO | HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+2025-05-01 14:54:09,053 | __main__ | INFO | RunResult:
+- Last agent: Agent(name="Job Apply Ninja", ...)
+- Final output (str):
+    It seems there was an issue filling in the phone number. Please try again or check the application form for any specific requirements.
+- 9 new item(s)
+- 4 raw response(s)
+- 0 input guardrail result(s)
+- 0 output guardrail result(s)
+(See `RunResult` for more details)
+2025-05-01 14:54:09,847 | httpx | INFO | HTTP Request: POST https://api.openai.com/v1/traces/ingest "HTTP/1.1 204 No Content"
+2025-05-01 15:31:09,395 | __main__ | INFO | Running job apply agent...
+2025-05-01 15:31:10,372 | httpx | INFO | HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 400 Bad Request"
+2025-05-01 15:31:10,373 | openai.agents | ERROR | Error getting response: Error code: 400 - {'error': {'message': "Invalid schema for function 'wait_for_selector': In context=('properties', 'state'), 'default' is not permitted.", 'type': 'invalid_request_error', 'param': 'tools[2].parameters', 'code': 'invalid_function_parameters'}}. (request_id: req_6c8ea9f7892390c66a58036432564c49)
+2025-05-01 15:31:11,580 | httpx | INFO | HTTP Request: POST https://api.openai.com/v1/traces/ingest "HTTP/1.1 204 No Content"
