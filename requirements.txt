@@ -1,2 +1,5 @@
 python-dotenv==1.0.0
-asyncio==3.4.3 
+asyncio==3.4.3
+playwright==1.42.0
+agents-sdk==0.1.0
+pathlib==1.0.1
