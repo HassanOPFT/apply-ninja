@@ -11,8 +11,8 @@ async def login_to_linkedin(page, context):
     try:
         logger.info("Starting LinkedIn login process...")
         await page.goto("https://www.linkedin.com/login")
-        await page.wait_for_load_state('networkidle')
-        await asyncio.sleep(2)  # Wait for page to stabilize
+        await page.wait_for_load_state('load')
+        # await asyncio.sleep(2)  # Wait for page to stabilize
 
         # Fill in credentials with delays
         logger.info("Entering credentials...")
@@ -24,7 +24,7 @@ async def login_to_linkedin(page, context):
         # Click login button
         logger.info("Submitting login form...")
         await page.click('button[type="submit"]')
-        await page.wait_for_load_state('networkidle')
+        await page.wait_for_load_state('load')
         
         # Wait for verification with 1-second checks up to 15 seconds
         logger.info("Waiting for verification...")
@@ -33,9 +33,8 @@ async def login_to_linkedin(page, context):
         elapsed_time = 0
         
         while elapsed_time < max_wait_time:
-            if await page.is_visible('nav[aria-label="Main navigation"]'):
+            if await page.is_visible('[aria-label="Main Feed"]'):
                 logger.info("Successfully logged in to LinkedIn")
-
                 return True
             await asyncio.sleep(check_interval)
             elapsed_time += check_interval
@@ -56,14 +55,22 @@ async def process_job_application(page, job_url):
     try:
         logger.info(f"Navigating to job: {job_url}")
         await page.goto(job_url)
-        await page.wait_for_load_state('networkidle')
-        await asyncio.sleep(3)  # Wait for job page to load
+        await asyncio.sleep(1)
+        await page.wait_for_load_state('load')
+        await asyncio.sleep(1)
+        primary_selector = 'button[aria-label^="Easy Apply"][id="jobs-apply-button-id"]'
+        fallback_selectors = [
+            'button.jobs-apply-button.artdeco-button--primary',
+            'div.jobs-apply-button--top-card button', 
+            'button[data-job-id]'
+        ]
 
-        if await page.is_visible("button:has-text('Easy Apply')"):
-            logger.info("Easy Apply button found, clicking...")
-            await page.click("button:has-text('Easy Apply')")
-            await asyncio.sleep(2)
-
+        logger.info("Looking for Easy Apply button...")
+        if await page.is_visible(primary_selector, timeout=5000):
+            logger.info("Easy Apply button found with primary selector, clicking...")
+            await page.click(primary_selector)
+            await page.wait_for_load_state('load')
+            
             if await page.is_visible('input[aria-label="Phone number"]'):
                 logger.info("Filling phone number field...")
                 await page.fill('input[aria-label="Phone number"]', '1234567890')
@@ -75,8 +82,33 @@ async def process_job_application(page, job_url):
             logger.info("Form partially filled. Stopping before submission.")
             return True
         else:
-            logger.warning("Easy Apply button not found on the job posting")
-            return False
+            found_button = False
+            for selector in fallback_selectors:
+                logger.info(f"Trying fallback selector: {selector}")
+                if await page.is_visible(selector, timeout=2000):
+                    logger.info(f"Easy Apply button found with fallback selector: {selector}")
+                    await page.click(selector)
+                    await page.wait_for_load_state('load')
+                    found_button = True
+                    break
+            
+            await asyncio.sleep(4)
+
+
+            if found_button:
+                if await page.is_visible('input[aria-label="Phone number"]'):
+                    logger.info("Filling phone number field...")
+                    await page.fill('input[aria-label="Phone number"]', '1234567890')
+                    await asyncio.sleep(1)
+                    logger.debug('Page content: %s', await page.content())
+                else:
+                    logger.warning("Phone number field not found on the form")
+
+                logger.info("Form partially filled. Stopping before submission.")
+                return True
+            else:
+                logger.warning("Easy Apply button not found on the job posting")
+                return False
 
     except Exception as e:
         logger.error(f"Job application process failed: {str(e)}")
@@ -89,7 +121,6 @@ async def browser_form_tool(job_url: str):
         browser = await p.chromium.launch(headless=False)
         context = await browser.new_context()
         page = await context.new_page()
-        # await browser.start_tracing(page, path="browser_trace.json")
 
         try:
             login_success = await login_to_linkedin(page, context)
