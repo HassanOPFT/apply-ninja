@@ -14,7 +14,7 @@ def setup_logging():
         level=logging.INFO,
         format='%(asctime)s | %(name)s | %(levelname)s | %(message)s',
         handlers=[
-            logging.FileHandler(f"{log_dir}/apply_ninja_{datetime.now().strftime('%Y%m%d')}.log"),
+            logging.FileHandler(f"{log_dir}/ninja_{datetime.now().strftime('%a_%H:%M')}.log"),
             logging.StreamHandler()
         ]
     )
